@@ -16,7 +16,9 @@ const commentRoutes   = require("./routes/comments"),
       indexRoutes     = require("./routes/index");
 
 // seedDB();
-mongoose.connect("mongodb+srv://oleskiy:adgj1357@cluster0-x1ici.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true, useUnifiedTopology: true });
+console.log(process.env.DATABASEURL);
+console.log(process.env.PORT);
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
