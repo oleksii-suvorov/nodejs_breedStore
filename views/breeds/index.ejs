@@ -1,0 +1,31 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+  <header class="jumbotron">
+    <h1><i class="fas fa-paw"></i> Welcome to Breeds Page</h1>
+    <hr>
+    <p>View this exсiting buddies page!</p>
+    <p>
+      <a class="btn btn-info" href="/breeds/create">Add new Breed</a>
+    </p>
+  </header>
+  <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+    <% breeds.forEach(breed => { %>
+      <div class="col-md-3 col-sm-6">
+        <figure class="rounded p-0 bg-white shadow-sm">
+        <figcaption class="pb-1 card-img-bottom">
+          <img class="w-100 card-img" src="<%= breed.img %>" alt="breed-photo">
+          <div class="caption-full">
+            <h4><%= breed.name %></h4>
+            <p>
+              <a href="/breeds/<%= breed._id %>" class="btn btn-info btn-sm">Details</a>
+            </p>
+          </div>
+        </figcaption>
+        </figure>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+  <%- include("../partials/footer") %>

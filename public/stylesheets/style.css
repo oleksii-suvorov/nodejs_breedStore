@@ -1,0 +1,59 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+.commentParagraph {
+ margin-bottom: 4px;
+}
+
+.navbar {
+  background-color: #e3f2fd;
+  font-size: 28px;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #138496;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.container-fluid {
+  margin: 0px 80px;
+}
+
+.jumbotron {
+  background-color: #e3f2fd;
+  margin-top: 20px;
+  border: 3px solid #e7e9eb;
+  border-radius: 20px;
+
+}
+
+.container {
+  padding: 0;
+}
+
+.deleteForm {
+  display: inline;
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
