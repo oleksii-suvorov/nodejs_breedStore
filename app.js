@@ -46,6 +46,6 @@ mongoose.set('useFindAndModify', false);
 
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, process.env.IP, () => {
   console.log("Server has been started on port 3000");
 });
