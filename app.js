@@ -44,7 +44,6 @@ app.use("/breeds/:id/comments", commentRoutes);
 app.use("/breeds", breedsRoutes);
 mongoose.set('useFindAndModify', false);
 
-//process.env.PORT, process.env.IP
-app.listen(3000, () => {
+app.listen(process.env.PORT, process.env.IP, () => {
   console.log("Server has been started on port 3000");
 });
