@@ -1,7 +1,8 @@
 const express       = require("express"),
       router        = express.Router(),
       passport      = require("passport"),
-      User          = require("../models/user");
+      User          = require("../models/user"),
+      { loginCredentials }     = require("../middleware/index");
 
 router.get("/", function (req,res) {
   res.render("landing");
@@ -29,7 +30,7 @@ router.get("/login", function(req,res){
   res.render("login");
 });
 
-router.post("/login", passport.authenticate("local", {
+router.post("/login", loginCredentials, passport.authenticate("local", {
     successRedirect: "/breeds",
     failureRedirect: "/login"
   }), function(req,res){

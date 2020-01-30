@@ -54,4 +54,16 @@ middlewareObj.isLoggedIn = function(req, res, next){
   }
 };
 
+middlewareObj.loginCredentials = function(req, res, next){
+  if(req.body.username === ""){
+    req.flash("error", "Please enter your username.");
+    next();
+  } if (req.body.password === "") {
+    req.flash("error", "Please enter your password.");
+    next();
+  } else {
+    next();
+  }
+}
+
 module.exports = middlewareObj;

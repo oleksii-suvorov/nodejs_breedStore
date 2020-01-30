@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/breeds">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/breeds/create">Create</a>
@@ -38,7 +38,7 @@
             </li>
           <% } else { %>
             <li class="nav-item">
-              <span class="navbar-text pr-3">Hello, <%= loggedUser.username %></span>
+              <span class="navbar-text pr-3" style="color: black; text-decoration: underline;">Hello, <%= loggedUser.username %></span>
             </li>
           <li class="nav-item">
             <a class="nav-link" href="/logout">Logout</a>

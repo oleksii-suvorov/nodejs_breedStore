@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const breedSchema = new mongoose.Schema({
   name: String,
   age: String,
+  standard: String,
   img: String,
   desc: String,
   author: {

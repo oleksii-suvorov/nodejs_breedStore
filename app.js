@@ -15,10 +15,8 @@ const commentRoutes   = require("./routes/comments"),
       breedsRoutes    = require("./routes/breeds"),
       indexRoutes     = require("./routes/index");
 
-// seedDB();
+// seedDB(); //load default breeds
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true, useUnifiedTopology: true });
-console.log(process.env.DATABASEURL);
-console.log(process.env.PORT);
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -46,8 +44,7 @@ app.use("/breeds/:id/comments", commentRoutes);
 app.use("/breeds", breedsRoutes);
 mongoose.set('useFindAndModify', false);
 
-
-
-app.listen(process.env.PORT, process.env.IP, () => {
+//process.env.PORT, process.env.IP
+app.listen(3000, () => {
   console.log("Server has been started on port 3000");
 });

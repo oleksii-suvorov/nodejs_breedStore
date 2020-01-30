@@ -57,3 +57,12 @@ p {
 .no-cssanimations .slideshow li {
 	opacity: 1;
 }
+
+.description {
+  font-weight: 200;
+  font-size: 23px;
+}
+.submitted {
+  font-weight: bolder;
+  font-size: 18px;
+}

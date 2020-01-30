@@ -20,6 +20,7 @@ router.post("/create", isLoggedIn, function (req,res) {
   let sendBreedToDB = {
     name: newBreed.name,
     age: newBreed.age,
+    standard: newBreed.standard,
     img: newBreed.img,
     desc: newBreed.desc,
     author: {
@@ -62,6 +63,7 @@ router.put("/:id", checkBreedOwnership, function (req,res){
   let updatedBreed = {
     name: req.body.breed.name,
     age: req.body.breed.age,
+    standard: req.body.breed.standard,
     img: req.body.breed.img,
     desc: req.body.breed.desc,
     author: {
