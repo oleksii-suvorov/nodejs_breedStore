@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require(`mongoose`);
 
 const breedSchema = new mongoose.Schema({
   name: String,
@@ -9,16 +9,16 @@ const breedSchema = new mongoose.Schema({
   author: {
     id: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
+      ref: `User`
     },
     username: String
   },
   comments: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Comment"
+      ref: `Comment`
     }
   ]
 });
 
-module.exports = mongoose.model("Breed", breedSchema);
+module.exports = mongoose.model(`Breed`, breedSchema);

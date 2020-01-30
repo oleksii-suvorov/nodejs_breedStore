@@ -2,22 +2,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1 {
-  font-size: 4rem;
-}
-p {
-  font-size: 1.5rem;
-}
-
-.btn {
-  font-family: 'Indie Flower', cursive;
-  font-size: 20px;
-}
-
-.commentParagraph {
- margin-bottom: 4px;
-}
-
 .navbar {
   background-color: #e3f2fd;
   font-size: 28px;
@@ -42,11 +26,27 @@ p {
   margin-top: 20px;
   border: 3px solid #e7e9eb;
   border-radius: 20px;
-
 }
 
 .container {
   padding: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
+.commentParagraph {
+ margin-bottom: 4px;
 }
 
 .deleteForm {
@@ -61,8 +61,25 @@ p {
 .description {
   font-weight: 200;
   font-size: 23px;
+  text-align: justify;
 }
+
 .submitted {
   font-weight: bolder;
   font-size: 18px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #e3f2fd;
+  margin-top: 30px;
 }

@@ -14,8 +14,8 @@
       <div class="col-md-3 col-sm-6">
         <div class="card-deck p-2">
           <div class="card">
-            <img class="card-img-top" style="height: 210px;" src="<%= breed.img %>" alt="breed-photo">
-            <div class="card-body" style="padding: 5px; height: 130px;">
+            <img class="card-img-top" style="height: 190px;" src="<%= breed.img %>" alt="breed-photo">
+            <div class="card-body" style="padding: 5px; height: 110px;">
               <h4 class="card-title"><%= breed.name %></h4>
               <p>
                 <a href="/breeds/<%= breed._id %>" class="btn btn-info btn-sm">Details</a>
@@ -27,5 +27,10 @@
     <% }) %>
   </div>
 </div>
+<footer id="sticky-footer" class="py-4 text-blue-50">
+  <div class="container text-center">
+    <small>Copyright &#169; BreedCamp</small>
+  </div>
+</footer>
 
   <%- include("../partials/footer") %>

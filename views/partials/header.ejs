@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <title>Breed Camp</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-blue fixed-to">
+  <nav class="navbar navbar-expand-lg navbar-light bg-blue">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><i class="fas fa-dog"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,15 +39,14 @@
             <li class="nav-item">
               <span class="navbar-text pr-3" style="color: black; text-decoration: underline;">Hello, <%= loggedUser.username %></span>
             </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/logout">Logout</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
           <% } %>
         </ul>
       </div>
     </div>
   </nav>
-
   <div class="container">
     <% if(error && error.length > 0){ %>
       <div class="alert alert-danger" role="alert">
